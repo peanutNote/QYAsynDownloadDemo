@@ -13,9 +13,22 @@
 		1E7A24CA1D3DDDB000EAE392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A24C81D3DDDB000EAE392 /* Main.storyboard */; };
 		1E7A24CC1D3DDDB000EAE392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A24CB1D3DDDB000EAE392 /* Assets.xcassets */; };
 		1E7A24CF1D3DDDB000EAE392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A24CD1D3DDDB000EAE392 /* LaunchScreen.storyboard */; };
+		1ED0AF0E1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF0D1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m */; };
+		1ED0AF121D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m */; };
+		1ED0AF131D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib */; };
+		1ED0AF1A1D40E5C000A9CB3F /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF181D40E5C000A9CB3F /* NSURLConnectionViewController.m */; };
+		1ED0AF1B1D40E5C000A9CB3F /* NSURLConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF191D40E5C000A9CB3F /* NSURLConnectionViewController.xib */; };
+		1ED0AF1F1D40E61E00A9CB3F /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionViewController.m */; };
+		1ED0AF201D40E61E00A9CB3F /* NSURLSessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionViewController.xib */; };
+		1ED0AF241D40E63100A9CB3F /* NSURLSessionDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateViewController.m */; };
+		1ED0AF251D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib */; };
+		1ED0AF291D40E64600A9CB3F /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF271D40E64600A9CB3F /* AFNetworkingViewController.m */; };
+		1ED0AF2A1D40E64600A9CB3F /* AFNetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF281D40E64600A9CB3F /* AFNetworkingViewController.xib */; };
+		88844921D21BC4B7382A94FD /* libPods-QYAsynDownloadDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520D8B0B46E79D5191143534 /* libPods-QYAsynDownloadDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17C5B8CEEBC2A81AA2BB8CDF /* Pods-QYAsynDownloadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYAsynDownloadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QYAsynDownloadDemo/Pods-QYAsynDownloadDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1E7A24BC1D3DDDB000EAE392 /* QYAsynDownloadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYAsynDownloadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7A24C01D3DDDB000EAE392 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E7A24C21D3DDDB000EAE392 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +39,26 @@
 		1E7A24CB1D3DDDB000EAE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E7A24CE1D3DDDB000EAE392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E7A24D01D3DDDB000EAE392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED0AF0C1D40E4EF00A9CB3F /* UIButton+BeautifulButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BeautifulButton.h"; sourceTree = "<group>"; };
+		1ED0AF0D1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BeautifulButton.m"; sourceTree = "<group>"; };
+		1ED0AF0F1D40E59700A9CB3F /* NSURLConnectionDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionDelegateViewController.h; sourceTree = "<group>"; };
+		1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDelegateViewController.m; sourceTree = "<group>"; };
+		1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionDelegateViewController.xib; sourceTree = "<group>"; };
+		1ED0AF171D40E5C000A9CB3F /* NSURLConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionViewController.h; sourceTree = "<group>"; };
+		1ED0AF181D40E5C000A9CB3F /* NSURLConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionViewController.m; sourceTree = "<group>"; };
+		1ED0AF191D40E5C000A9CB3F /* NSURLConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionViewController.xib; sourceTree = "<group>"; };
+		1ED0AF1C1D40E61E00A9CB3F /* NSURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionViewController.h; sourceTree = "<group>"; };
+		1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionViewController.m; sourceTree = "<group>"; };
+		1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionViewController.xib; sourceTree = "<group>"; };
+		1ED0AF211D40E63100A9CB3F /* NSURLSessionDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDelegateViewController.h; sourceTree = "<group>"; };
+		1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDelegateViewController.m; sourceTree = "<group>"; };
+		1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDelegateViewController.xib; sourceTree = "<group>"; };
+		1ED0AF261D40E64600A9CB3F /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		1ED0AF271D40E64600A9CB3F /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		1ED0AF281D40E64600A9CB3F /* AFNetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingViewController.xib; sourceTree = "<group>"; };
+		1ED0AF2B1D40E6B000A9CB3F /* QYAsynDownloadDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYAsynDownloadDemo.pch; sourceTree = "<group>"; };
+		520D8B0B46E79D5191143534 /* libPods-QYAsynDownloadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QYAsynDownloadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D619A8D13FE75A7C1A71BE /* Pods-QYAsynDownloadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYAsynDownloadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QYAsynDownloadDemo/Pods-QYAsynDownloadDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +66,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88844921D21BC4B7382A94FD /* libPods-QYAsynDownloadDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15D879242BD38C5CDFA41B87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9D619A8D13FE75A7C1A71BE /* Pods-QYAsynDownloadDemo.debug.xcconfig */,
+				17C5B8CEEBC2A81AA2BB8CDF /* Pods-QYAsynDownloadDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E0463AD1D3F1D7E0084867B /* AFNetworkingDownload */ = {
+			isa = PBXGroup;
+			children = (
+				1ED0AF261D40E64600A9CB3F /* AFNetworkingViewController.h */,
+				1ED0AF271D40E64600A9CB3F /* AFNetworkingViewController.m */,
+				1ED0AF281D40E64600A9CB3F /* AFNetworkingViewController.xib */,
+			);
+			path = AFNetworkingDownload;
+			sourceTree = "<group>";
+		};
+		1E0463AE1D3F1DA20084867B /* NSURLConnectionDownload */ = {
+			isa = PBXGroup;
+			children = (
+				1ED0AF171D40E5C000A9CB3F /* NSURLConnectionViewController.h */,
+				1ED0AF181D40E5C000A9CB3F /* NSURLConnectionViewController.m */,
+				1ED0AF191D40E5C000A9CB3F /* NSURLConnectionViewController.xib */,
+				1ED0AF0F1D40E59700A9CB3F /* NSURLConnectionDelegateViewController.h */,
+				1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m */,
+				1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib */,
+			);
+			path = NSURLConnectionDownload;
+			sourceTree = "<group>";
+		};
+		1E0463B01D3F83FF0084867B /* NSURLSessionDownload */ = {
+			isa = PBXGroup;
+			children = (
+				1ED0AF1C1D40E61E00A9CB3F /* NSURLSessionViewController.h */,
+				1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionViewController.m */,
+				1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionViewController.xib */,
+				1ED0AF211D40E63100A9CB3F /* NSURLSessionDelegateViewController.h */,
+				1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateViewController.m */,
+				1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib */,
+			);
+			path = NSURLSessionDownload;
+			sourceTree = "<group>";
+		};
 		1E7A24B31D3DDDB000EAE392 = {
 			isa = PBXGroup;
 			children = (
 				1E7A24BE1D3DDDB000EAE392 /* QYAsynDownloadDemo */,
 				1E7A24BD1D3DDDB000EAE392 /* Products */,
+				15D879242BD38C5CDFA41B87 /* Pods */,
+				5C014218597C2ED33835A152 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +139,11 @@
 		1E7A24BE1D3DDDB000EAE392 /* QYAsynDownloadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1ED0AF0C1D40E4EF00A9CB3F /* UIButton+BeautifulButton.h */,
+				1ED0AF0D1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m */,
+				1E0463AE1D3F1DA20084867B /* NSURLConnectionDownload */,
+				1E0463B01D3F83FF0084867B /* NSURLSessionDownload */,
+				1E0463AD1D3F1D7E0084867B /* AFNetworkingDownload */,
 				1E7A24C21D3DDDB000EAE392 /* AppDelegate.h */,
 				1E7A24C31D3DDDB000EAE392 /* AppDelegate.m */,
 				1E7A24C51D3DDDB000EAE392 /* ViewController.h */,
@@ -75,8 +161,17 @@
 			isa = PBXGroup;
 			children = (
 				1E7A24C01D3DDDB000EAE392 /* main.m */,
+				1ED0AF2B1D40E6B000A9CB3F /* QYAsynDownloadDemo.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C014218597C2ED33835A152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520D8B0B46E79D5191143534 /* libPods-QYAsynDownloadDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E7A24D31D3DDDB000EAE392 /* Build configuration list for PBXNativeTarget "QYAsynDownloadDemo" */;
 			buildPhases = (
+				5D26BD802FEB9D9698562C4D /* [CP] Check Pods Manifest.lock */,
 				1E7A24B81D3DDDB000EAE392 /* Sources */,
 				1E7A24B91D3DDDB000EAE392 /* Frameworks */,
 				1E7A24BA1D3DDDB000EAE392 /* Resources */,
+				070B68A6DADB184F6F296261 /* [CP] Embed Pods Frameworks */,
+				6E029C85DE5C3858E6D0C449 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,21 +234,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED0AF251D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib in Resources */,
+				1ED0AF131D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib in Resources */,
 				1E7A24CF1D3DDDB000EAE392 /* LaunchScreen.storyboard in Resources */,
+				1ED0AF201D40E61E00A9CB3F /* NSURLSessionViewController.xib in Resources */,
 				1E7A24CC1D3DDDB000EAE392 /* Assets.xcassets in Resources */,
+				1ED0AF2A1D40E64600A9CB3F /* AFNetworkingViewController.xib in Resources */,
 				1E7A24CA1D3DDDB000EAE392 /* Main.storyboard in Resources */,
+				1ED0AF1B1D40E5C000A9CB3F /* NSURLConnectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		070B68A6DADB184F6F296261 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QYAsynDownloadDemo/Pods-QYAsynDownloadDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D26BD802FEB9D9698562C4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E029C85DE5C3858E6D0C449 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QYAsynDownloadDemo/Pods-QYAsynDownloadDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E7A24B81D3DDDB000EAE392 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED0AF121D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m in Sources */,
+				1ED0AF0E1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m in Sources */,
+				1ED0AF241D40E63100A9CB3F /* NSURLSessionDelegateViewController.m in Sources */,
+				1ED0AF1A1D40E5C000A9CB3F /* NSURLConnectionViewController.m in Sources */,
+				1ED0AF291D40E64600A9CB3F /* AFNetworkingViewController.m in Sources */,
 				1E7A24C71D3DDDB000EAE392 /* ViewController.m in Sources */,
 				1E7A24C41D3DDDB000EAE392 /* AppDelegate.m in Sources */,
+				1ED0AF1F1D40E61E00A9CB3F /* NSURLSessionViewController.m in Sources */,
 				1E7A24C11D3DDDB000EAE392 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +420,12 @@
 		};
 		1E7A24D41D3DDDB000EAE392 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D619A8D13FE75A7C1A71BE /* Pods-QYAsynDownloadDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = QYAsynDownloadDemo/QYAsynDownloadDemo.pch;
 				INFOPLIST_FILE = QYAsynDownloadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianye.QYAsynDownloadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,9 +434,12 @@
 		};
 		1E7A24D51D3DDDB000EAE392 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C5B8CEEBC2A81AA2BB8CDF /* Pods-QYAsynDownloadDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = QYAsynDownloadDemo/QYAsynDownloadDemo.pch;
 				INFOPLIST_FILE = QYAsynDownloadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianye.QYAsynDownloadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +465,7 @@
 				1E7A24D51D3DDDB000EAE392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController
+@property (copy, nonatomic) NSArray *arrSampleName;
 
+- (instancetype)initWithSampleNameArray:(NSArray *)arrSampleName;
 
 @end
 

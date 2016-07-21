@@ -1,0 +1,22 @@
+//
+//  QYAsynDownloadDemo.pch
+//  QYAsynDownloadDemo
+//
+//  Created by qianye on 16/7/21.
+//  Copyright © 2016年 qianye. All rights reserved.
+//
+
+#ifndef QYAsynDownloadDemo_pch
+#define QYAsynDownloadDemo_pch
+
+#define kFileURLStr @"http://files.cnblogs.com/files/huangjianwu/metro_demo使用Highcharts实现图表展示.zip"
+
+#define kTitleOfNSURLConnection @"使用 NSURLConnection 直接方式"
+#define kTitleOfNSURLConnectionDelegate @"使用 NSURLConnection 代理方式"
+#define kTitleOfNSURLSession @"使用 NSURLSession 直接方式"
+#define kTitleOfNSURLSessionDelegate @"使用 NSURLSession 代理方式"
+#define kTitleOfAFNetworking @"使用 AFNetworking 方式"
+
+#define kApplication [UIApplication sharedApplication]
+
+#endif /* QYAsynDownloadDemo_pch */
