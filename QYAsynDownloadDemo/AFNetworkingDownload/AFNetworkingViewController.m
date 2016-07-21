@@ -45,7 +45,7 @@
 - (void)checkNetwork {
     NSURL *baseURL = [NSURL URLWithString:@"http://www.baidu.com/"];
     /* 
-     * AFNetwroking 2.x使用，3.0已经弃用：http://www.cocoachina.com/ios/20151022/13831.html
+     * AFNetwroking 2.x使用，3.0已经弃用：https://github.com/AFNetworking/AFNetworking/wiki/AFNetworking-3.0-Migration-Guide#new-requirements-ios-7-mac-os-x-109-watchos-2-tvos-9--xcode-7
      *
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
     NSOperationQueue *operationQueue = manager.operationQueue;
