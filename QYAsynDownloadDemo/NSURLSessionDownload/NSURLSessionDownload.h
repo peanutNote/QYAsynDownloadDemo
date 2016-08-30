@@ -1,5 +1,5 @@
 //
-//  NSURLConnectionViewController.h
+//  NSURLSessionViewController.h
 //  QYAsynDownloadDemo
 //
 //  Created by qianye on 16/7/21.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NSURLConnectionViewController : UIViewController
+@interface NSURLSessionDownload : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *lblFileName;
 @property (strong, nonatomic) IBOutlet UILabel *lblMessage;
 @property (strong, nonatomic) IBOutlet UIButton *btnDownloadFile;

@@ -6,16 +6,15 @@
 //  Copyright © 2016年 qianye. All rights reserved.
 //
 
-#import "NSURLConnectionDelegateViewController.h"
-#import "UIButton+BeautifulButton.h"
+#import "NSURLConnectionDelegateDownload.h"
 
-@interface NSURLConnectionDelegateViewController ()
+@interface NSURLConnectionDelegateDownload ()
 - (void)layoutUI;
 - (BOOL)isExistCacheInMemory:(NSURLRequest *)request;
 - (void)updateProgress;
 @end
 
-@implementation NSURLConnectionDelegateViewController
+@implementation NSURLConnectionDelegateDownload
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,8 +30,6 @@
 - (void)layoutUI {
     self.navigationItem.title = kTitleOfNSURLConnectionDelegate;
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.000];
-    
-    [_btnDownloadFile beautifulButton:nil];
 }
 
 - (BOOL)isExistCacheInMemory:(NSURLRequest *)request {

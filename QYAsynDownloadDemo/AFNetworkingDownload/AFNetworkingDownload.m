@@ -6,21 +6,20 @@
 //  Copyright © 2016年 qianye. All rights reserved.
 //
 
-#import "AFNetworkingViewController.h"
+#import "AFNetworkingDownload.h"
 #import "AFNetworking.h"
 #import "AFNetworkActivityIndicatorManager.h"
-#import "UIButton+BeautifulButton.h"
+#import "QYCreateUploadRequest.h"
 
-@interface AFNetworkingViewController ()
+@interface AFNetworkingDownload ()
 - (void)showAlert:(NSString *)msg;
 - (void)checkNetwork;
 - (void)layoutUI;
-- (NSMutableURLRequest *)downloadRequest;
 - (NSURL *)saveURL:(NSURLResponse *)response deleteExistFile:(BOOL)deleteExistFile;
 - (void)updateProgress:(int64_t)receiveDataLength totalDataLength:(int64_t)totalDataLength;
 @end
 
-@implementation AFNetworkingViewController
+@implementation AFNetworkingDownload
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -101,8 +100,6 @@
     //以下语句等同于：UIButton *btn = _btnDownloadFileByConnection ? _btnDownloadFileByConnection : [UIButton new];
     //在 .NET 中，相当于使用「??」；在 JavaScript 中，相当于使用「||」来实现这种类似的判断
     UIButton *btn = _btnDownloadFileByConnection ?: [UIButton new];
-    [btn beautifulButton:nil];
-    [_btnDownloadFileBySession beautifulButton:[UIColor orangeColor]];
     
     //进度效果
     _hud = [[MBProgressHUD alloc] initWithView:self.view];
@@ -116,17 +113,6 @@
     
     //启动网络活动指示器；会根据网络交互情况，实时显示或隐藏网络活动指示器；他通过「通知与消息机制」来实现 [UIApplication sharedApplication].networkActivityIndicatorVisible 的控制
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-}
-
-- (NSMutableURLRequest *)downloadRequest {
-    NSString *fileURLStr = kFileURLStr;
-    //编码操作；对应的解码操作是用 stringByRemovingPercentEncoding 方法
-    fileURLStr = [fileURLStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSURL *fileURL = [NSURL URLWithString:fileURLStr];
-    
-    //创建请求
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:fileURL];
-    return request;
 }
 
 - (NSURL *)saveURL:(NSURLResponse *)response deleteExistFile:(BOOL)deleteExistFile {
@@ -211,7 +197,7 @@
 
 - (IBAction)downloadFileBySession:(id)sender {
     //创建请求
-    NSMutableURLRequest *request = [self downloadRequest];
+    NSMutableURLRequest *request = [QYCreateUploadRequest downloadRequest];
     
     //创建会话配置「进程内会话」
     NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];

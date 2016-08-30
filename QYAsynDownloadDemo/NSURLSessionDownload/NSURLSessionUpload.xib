@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSURLSessionUpload">
+            <connections>
+                <outlet property="resultLabel" destination="yd5-3T-NPe" id="CJP-8k-jkb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传示例" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1e-QC-TJC">
+                    <rect key="frame" x="145" y="79" width="310" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="310" id="Wxf-BY-3f4"/>
+                        <constraint firstAttribute="height" constant="18" id="snh-u9-JUz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3v-8M-Vxd">
+                    <rect key="frame" x="250" y="495" width="100" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Pod-pf-KSQ"/>
+                        <constraint firstAttribute="width" constant="100" id="dle-uG-bb7"/>
+                    </constraints>
+                    <state key="normal" title="上传">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="uploadFileBySession:" destination="-1" eventType="touchUpInside" id="Uua-zX-NuM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="准备上传" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd5-3T-NPe">
+                    <rect key="frame" x="270" y="137" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Y1e-QC-TJC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9c5-Vw-PXe"/>
+                <constraint firstItem="yd5-3T-NPe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IfA-90-yxQ"/>
+                <constraint firstItem="yd5-3T-NPe" firstAttribute="top" secondItem="Y1e-QC-TJC" secondAttribute="bottom" constant="40" id="QT2-C3-d26"/>
+                <constraint firstAttribute="bottom" secondItem="F3v-8M-Vxd" secondAttribute="bottom" constant="65" id="qIE-Kr-M00"/>
+                <constraint firstItem="Y1e-QC-TJC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="vDL-wl-ihq"/>
+                <constraint firstItem="F3v-8M-Vxd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vfA-un-GfG"/>
+            </constraints>
+            <point key="canvasLocation" x="555" y="333"/>
+        </view>
+    </objects>
+</document>

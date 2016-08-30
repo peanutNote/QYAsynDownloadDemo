@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "QYCreateUploadRequest.h"
 
 @interface AppDelegate ()
 

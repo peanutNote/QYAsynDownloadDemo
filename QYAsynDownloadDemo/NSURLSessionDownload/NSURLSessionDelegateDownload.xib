@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSURLSessionDelegateViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSURLSessionDelegateDownload">
             <connections>
                 <outlet property="btnCancel" destination="yMY-kU-iKL" id="QHP-ls-q8P"/>
                 <outlet property="btnDownloadFile" destination="mwt-p9-tRE" id="ZVc-6S-ES3"/>

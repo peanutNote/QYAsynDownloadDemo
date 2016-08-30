@@ -6,15 +6,14 @@
 //  Copyright © 2016年 qianye. All rights reserved.
 //
 
-#import "NSURLConnectionViewController.h"
-#import "UIButton+BeautifulButton.h"
+#import "NSURLConnectionDownload.h"
 
-@interface NSURLConnectionViewController ()
+@interface NSURLConnectionDownload ()
 - (void)layoutUI;
 - (void)saveDataToDisk:(NSData *)data;
 @end
 
-@implementation NSURLConnectionViewController
+@implementation NSURLConnectionDownload
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,8 +29,6 @@
 - (void)layoutUI {
     self.navigationItem.title = kTitleOfNSURLConnection;
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.000];
-    
-    [_btnDownloadFile beautifulButton:nil];
 }
 
 - (void)saveDataToDisk:(NSData *)data {

@@ -6,17 +6,16 @@
 //  Copyright © 2016年 qianye. All rights reserved.
 //
 
-#import "NSURLSessionDelegateViewController.h"
-#import "UIButton+BeautifulButton.h"
+#import "NSURLSessionDelegateDownload.h"
 
-@interface NSURLSessionDelegateViewController ()
+@interface NSURLSessionDelegateDownload ()
 - (void)layoutUI;
 - (NSURLSession *)defaultSession;
 - (NSURLSession *)backgroundSession;
 - (void)updateProgress:(int64_t)receiveDataLength totalDataLength:(int64_t)totalDataLength;
 @end
 
-@implementation NSURLSessionDelegateViewController
+@implementation NSURLSessionDelegateDownload
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,11 +31,6 @@
 - (void)layoutUI {
     self.navigationItem.title = kTitleOfNSURLSessionDelegate;
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.000];
-    
-    [_btnDownloadFile beautifulButton:nil];
-    [_btnCancel beautifulButton:[UIColor redColor]];
-    [_btnSuspend beautifulButton:[UIColor purpleColor]];
-    [_btnResume beautifulButton:[UIColor orangeColor]];
 }
 
 - (NSURLSession *)defaultSession {

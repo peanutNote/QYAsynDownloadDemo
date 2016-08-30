@@ -6,14 +6,13 @@
 //  Copyright © 2016年 qianye. All rights reserved.
 //
 
-#import "NSURLSessionViewController.h"
-#import "UIButton+BeautifulButton.h"
+#import "NSURLSessionDownload.h"
 
-@interface NSURLSessionViewController ()
+@interface NSURLSessionDownload ()
 - (void)layoutUI;
 @end
 
-@implementation NSURLSessionViewController
+@implementation NSURLSessionDownload
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,8 +28,6 @@
 - (void)layoutUI {
     self.navigationItem.title = kTitleOfNSURLSession;
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.000];
-    
-    [_btnDownloadFile beautifulButton:nil];
 }
 
 - (IBAction)downloadFile:(id)sender {

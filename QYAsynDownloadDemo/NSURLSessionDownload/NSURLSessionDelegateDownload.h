@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NSURLSessionDelegateViewController : UIViewController <NSURLSessionDownloadDelegate>
+@interface NSURLSessionDelegateDownload : UIViewController <NSURLSessionDownloadDelegate>
 @property (strong, nonatomic) NSURLSessionDownloadTask *downloadTask;
 
 @property (strong, nonatomic) IBOutlet UILabel *lblFileName;

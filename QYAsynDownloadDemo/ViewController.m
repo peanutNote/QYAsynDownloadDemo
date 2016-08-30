@@ -7,25 +7,20 @@
 //
 
 #import "ViewController.h"
-#import "NSURLConnectionViewController.h"
-#import "NSURLConnectionDelegateViewController.h"
-#import "NSURLSessionViewController.h"
-#import "NSURLSessionDelegateViewController.h"
-#import "AFNetworkingViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    NSArray *_arrSampleName;
+    NSArray *_arrSampleClass;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -36,28 +31,29 @@
                        kTitleOfNSURLConnectionDelegate,
                        kTitleOfNSURLSession,
                        kTitleOfNSURLSessionDelegate,
-                       kTitleOfAFNetworking];
+                       kTitleOfAFNetworking,
+                       kTitleOfNSURLConnectionUpload,
+                       kTitleOfNSURLSessionUpload,
+                       kTitleOfAFNetworkingUpload];
+    
+    _arrSampleClass = @[@"NSURLConnectionDownload",
+                        @"NSURLConnectionDelegateDownload",
+                        @"NSURLSessionDownload",
+                        @"NSURLSessionDelegateDownload",
+                        @"AFNetworkingDownload",
+                        @"NSURLConnectionUpload",
+                        @"NSURLSessionUpload",
+                        @"AFNetworkingUpload"];
 }
 
-- (instancetype)initWithSampleNameArray:(NSArray *)arrSampleName {
-    if (self = [super initWithStyle:UITableViewStyleGrouped]) {
-        
-    }
-    return self;
-}
-
-
-#pragma mark - UITableViewController相关方法重写
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.1;
-}
+#pragma mark - UITableViewController
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_arrSampleName count];
+    return _arrSampleName.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -70,35 +66,14 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0: {
-            NSURLConnectionViewController *connectionVC = [NSURLConnectionViewController new];
-            [self.navigationController pushViewController:connectionVC animated:YES];
-            break;
-        }
-        case 1: {
-            NSURLConnectionDelegateViewController *connectionDelegateVC = [NSURLConnectionDelegateViewController new];
-            [self.navigationController pushViewController:connectionDelegateVC animated:YES];
-            break;
-        }
-        case 2: {
-            NSURLSessionViewController *sessionVC = [NSURLSessionViewController new];
-            [self.navigationController pushViewController:sessionVC animated:YES];
-            break;
-        }
-        case 3: {
-            NSURLSessionDelegateViewController *sessionDelegateVC = [NSURLSessionDelegateViewController new];
-            [self.navigationController pushViewController:sessionDelegateVC animated:YES];
-            break;
-        }
-        case 4: {
-            AFNetworkingViewController *networkingVC = [AFNetworkingViewController new];
-            [self.navigationController pushViewController:networkingVC animated:YES];
-            break;
-        }
-        default:
-            break;
+    UIViewController *vc = [[NSClassFromString([_arrSampleClass objectAtIndex:indexPath.row]) alloc] init];
+    if (vc) {
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

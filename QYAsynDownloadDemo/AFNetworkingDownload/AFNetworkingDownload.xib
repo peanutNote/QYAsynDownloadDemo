@@ -5,9 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSURLConnectionViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AFNetworkingDownload">
             <connections>
-                <outlet property="btnDownloadFile" destination="mwt-p9-tRE" id="ZVc-6S-ES3"/>
+                <outlet property="btnDownloadFileByConnection" destination="IkH-un-SOz" id="gDd-6X-uxU"/>
+                <outlet property="btnDownloadFileBySession" destination="mwt-p9-tRE" id="5Qk-Zm-V3w"/>
                 <outlet property="lblFileName" destination="dlB-Qn-eOO" id="NdS-9n-7KX"/>
                 <outlet property="lblMessage" destination="qlQ-nM-BXU" id="tRe-SR-AQE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -21,20 +22,20 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="metro_demo使用Highcharts实现图表展示.zip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlB-Qn-eOO">
                     <rect key="frame" x="145" y="104" width="310" height="18"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwt-p9-tRE">
-                    <rect key="frame" x="250" y="520" width="100" height="40"/>
+                    <rect key="frame" x="175" y="520" width="250" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="I5D-tA-ffH"/>
+                        <constraint firstAttribute="width" constant="250" id="I5D-tA-ffH"/>
                         <constraint firstAttribute="height" constant="40" id="Y8C-D4-IVr"/>
                     </constraints>
-                    <state key="normal" title="下载">
+                    <state key="normal" title="基于 NSURLSession 的下载">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="downloadFile:" destination="-1" eventType="touchUpInside" id="MK4-Yk-IOk"/>
+                        <action selector="downloadFileBySession:" destination="-1" eventType="touchUpInside" id="z6s-cq-dag"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlQ-nM-BXU">
@@ -46,11 +47,26 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="text" value=""/>
                     </userDefinedRuntimeAttributes>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkH-un-SOz">
+                    <rect key="frame" x="174" y="460" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="3a7-Og-iWa"/>
+                        <constraint firstAttribute="height" constant="40" id="mc0-yK-hWE"/>
+                    </constraints>
+                    <state key="normal" title="基于 NSURLConnection 的下载">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadFileByConnection:" destination="-1" eventType="touchUpInside" id="1ko-jP-kCo"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="mwt-p9-tRE" firstAttribute="top" secondItem="IkH-un-SOz" secondAttribute="bottom" constant="20" id="Sye-JW-gux"/>
                 <constraint firstAttribute="centerX" secondItem="dlB-Qn-eOO" secondAttribute="centerX" id="gNK-NO-rth"/>
                 <constraint firstItem="dlB-Qn-eOO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="hwU-O2-Fed"/>
+                <constraint firstAttribute="centerX" secondItem="IkH-un-SOz" secondAttribute="centerX" constant="1" id="lF1-Yf-Axs"/>
                 <constraint firstAttribute="centerX" secondItem="mwt-p9-tRE" secondAttribute="centerX" id="teN-3t-8Gc"/>
                 <constraint firstItem="qlQ-nM-BXU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="140" id="w3g-ej-P18"/>
                 <constraint firstItem="dlB-Qn-eOO" firstAttribute="leading" secondItem="qlQ-nM-BXU" secondAttribute="leading" constant="0.5" id="wMU-pU-z9f"/>

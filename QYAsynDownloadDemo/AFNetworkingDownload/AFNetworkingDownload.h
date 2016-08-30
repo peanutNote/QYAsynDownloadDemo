@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 
-@interface AFNetworkingViewController : UIViewController
+@interface AFNetworkingDownload : UIViewController
 @property (strong, nonatomic) MBProgressHUD *hud;
 
 @property (strong, nonatomic) IBOutlet UILabel *lblFileName;

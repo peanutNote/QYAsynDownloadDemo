@@ -13,17 +13,25 @@
 		1E7A24CA1D3DDDB000EAE392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A24C81D3DDDB000EAE392 /* Main.storyboard */; };
 		1E7A24CC1D3DDDB000EAE392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A24CB1D3DDDB000EAE392 /* Assets.xcassets */; };
 		1E7A24CF1D3DDDB000EAE392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A24CD1D3DDDB000EAE392 /* LaunchScreen.storyboard */; };
-		1ED0AF0E1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF0D1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m */; };
-		1ED0AF121D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m */; };
-		1ED0AF131D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib */; };
-		1ED0AF1A1D40E5C000A9CB3F /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF181D40E5C000A9CB3F /* NSURLConnectionViewController.m */; };
-		1ED0AF1B1D40E5C000A9CB3F /* NSURLConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF191D40E5C000A9CB3F /* NSURLConnectionViewController.xib */; };
-		1ED0AF1F1D40E61E00A9CB3F /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionViewController.m */; };
-		1ED0AF201D40E61E00A9CB3F /* NSURLSessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionViewController.xib */; };
-		1ED0AF241D40E63100A9CB3F /* NSURLSessionDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateViewController.m */; };
-		1ED0AF251D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib */; };
-		1ED0AF291D40E64600A9CB3F /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF271D40E64600A9CB3F /* AFNetworkingViewController.m */; };
-		1ED0AF2A1D40E64600A9CB3F /* AFNetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF281D40E64600A9CB3F /* AFNetworkingViewController.xib */; };
+		1E9725DF1D75845C0082BD9B /* NSURLSessionUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9725DD1D75845C0082BD9B /* NSURLSessionUpload.m */; };
+		1E9725E01D75845C0082BD9B /* NSURLSessionUpload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9725DE1D75845C0082BD9B /* NSURLSessionUpload.xib */; };
+		1E9E1F7F1D420DDD0038E837 /* NSURLConnectionUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E1F7D1D420DDD0038E837 /* NSURLConnectionUpload.m */; };
+		1E9E1F801D420DDD0038E837 /* NSURLConnectionUpload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9E1F7E1D420DDD0038E837 /* NSURLConnectionUpload.xib */; };
+		1E9E1F831D420DFE0038E837 /* QYCreateUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E1F821D420DFE0038E837 /* QYCreateUploadRequest.m */; };
+		1E9E1F851D450D150038E837 /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9E1F841D450D150038E837 /* qrcode.png */; };
+		1E9E1F871D45C2170038E837 /* qrcode1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9E1F861D45C2170038E837 /* qrcode1.png */; };
+		1ED0AF121D40E59700A9CB3F /* NSURLConnectionDelegateDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateDownload.m */; };
+		1ED0AF131D40E59700A9CB3F /* NSURLConnectionDelegateDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateDownload.xib */; };
+		1ED0AF1A1D40E5C000A9CB3F /* NSURLConnectionDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF181D40E5C000A9CB3F /* NSURLConnectionDownload.m */; };
+		1ED0AF1B1D40E5C000A9CB3F /* NSURLConnectionDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF191D40E5C000A9CB3F /* NSURLConnectionDownload.xib */; };
+		1ED0AF1F1D40E61E00A9CB3F /* NSURLSessionDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionDownload.m */; };
+		1ED0AF201D40E61E00A9CB3F /* NSURLSessionDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionDownload.xib */; };
+		1ED0AF241D40E63100A9CB3F /* NSURLSessionDelegateDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateDownload.m */; };
+		1ED0AF251D40E63100A9CB3F /* NSURLSessionDelegateDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateDownload.xib */; };
+		1ED0AF291D40E64600A9CB3F /* AFNetworkingDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0AF271D40E64600A9CB3F /* AFNetworkingDownload.m */; };
+		1ED0AF2A1D40E64600A9CB3F /* AFNetworkingDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED0AF281D40E64600A9CB3F /* AFNetworkingDownload.xib */; };
+		1EEF67CA1D463CCD00A64CE2 /* AFNetworkingUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEF67C81D463CCD00A64CE2 /* AFNetworkingUpload.m */; };
+		1EEF67CB1D463CCD00A64CE2 /* AFNetworkingUpload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EEF67C91D463CCD00A64CE2 /* AFNetworkingUpload.xib */; };
 		88844921D21BC4B7382A94FD /* libPods-QYAsynDownloadDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520D8B0B46E79D5191143534 /* libPods-QYAsynDownloadDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -39,24 +47,35 @@
 		1E7A24CB1D3DDDB000EAE392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E7A24CE1D3DDDB000EAE392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E7A24D01D3DDDB000EAE392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1ED0AF0C1D40E4EF00A9CB3F /* UIButton+BeautifulButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BeautifulButton.h"; sourceTree = "<group>"; };
-		1ED0AF0D1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BeautifulButton.m"; sourceTree = "<group>"; };
-		1ED0AF0F1D40E59700A9CB3F /* NSURLConnectionDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionDelegateViewController.h; sourceTree = "<group>"; };
-		1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDelegateViewController.m; sourceTree = "<group>"; };
-		1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionDelegateViewController.xib; sourceTree = "<group>"; };
-		1ED0AF171D40E5C000A9CB3F /* NSURLConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionViewController.h; sourceTree = "<group>"; };
-		1ED0AF181D40E5C000A9CB3F /* NSURLConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionViewController.m; sourceTree = "<group>"; };
-		1ED0AF191D40E5C000A9CB3F /* NSURLConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionViewController.xib; sourceTree = "<group>"; };
-		1ED0AF1C1D40E61E00A9CB3F /* NSURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionViewController.h; sourceTree = "<group>"; };
-		1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionViewController.m; sourceTree = "<group>"; };
-		1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionViewController.xib; sourceTree = "<group>"; };
-		1ED0AF211D40E63100A9CB3F /* NSURLSessionDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDelegateViewController.h; sourceTree = "<group>"; };
-		1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDelegateViewController.m; sourceTree = "<group>"; };
-		1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDelegateViewController.xib; sourceTree = "<group>"; };
-		1ED0AF261D40E64600A9CB3F /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
-		1ED0AF271D40E64600A9CB3F /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
-		1ED0AF281D40E64600A9CB3F /* AFNetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingViewController.xib; sourceTree = "<group>"; };
+		1E9725DC1D75845C0082BD9B /* NSURLSessionUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionUpload.h; sourceTree = "<group>"; };
+		1E9725DD1D75845C0082BD9B /* NSURLSessionUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionUpload.m; sourceTree = "<group>"; };
+		1E9725DE1D75845C0082BD9B /* NSURLSessionUpload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionUpload.xib; sourceTree = "<group>"; };
+		1E9E1F7C1D420DDD0038E837 /* NSURLConnectionUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionUpload.h; sourceTree = "<group>"; };
+		1E9E1F7D1D420DDD0038E837 /* NSURLConnectionUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionUpload.m; sourceTree = "<group>"; };
+		1E9E1F7E1D420DDD0038E837 /* NSURLConnectionUpload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionUpload.xib; sourceTree = "<group>"; };
+		1E9E1F811D420DFE0038E837 /* QYCreateUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCreateUploadRequest.h; sourceTree = "<group>"; };
+		1E9E1F821D420DFE0038E837 /* QYCreateUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYCreateUploadRequest.m; sourceTree = "<group>"; };
+		1E9E1F841D450D150038E837 /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode.png; sourceTree = "<group>"; };
+		1E9E1F861D45C2170038E837 /* qrcode1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode1.png; sourceTree = "<group>"; };
+		1ED0AF0F1D40E59700A9CB3F /* NSURLConnectionDelegateDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionDelegateDownload.h; sourceTree = "<group>"; };
+		1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDelegateDownload.m; sourceTree = "<group>"; };
+		1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionDelegateDownload.xib; sourceTree = "<group>"; };
+		1ED0AF171D40E5C000A9CB3F /* NSURLConnectionDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionDownload.h; sourceTree = "<group>"; };
+		1ED0AF181D40E5C000A9CB3F /* NSURLConnectionDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDownload.m; sourceTree = "<group>"; };
+		1ED0AF191D40E5C000A9CB3F /* NSURLConnectionDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLConnectionDownload.xib; sourceTree = "<group>"; };
+		1ED0AF1C1D40E61E00A9CB3F /* NSURLSessionDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDownload.h; sourceTree = "<group>"; };
+		1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDownload.m; sourceTree = "<group>"; };
+		1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDownload.xib; sourceTree = "<group>"; };
+		1ED0AF211D40E63100A9CB3F /* NSURLSessionDelegateDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDelegateDownload.h; sourceTree = "<group>"; };
+		1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDelegateDownload.m; sourceTree = "<group>"; };
+		1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDelegateDownload.xib; sourceTree = "<group>"; };
+		1ED0AF261D40E64600A9CB3F /* AFNetworkingDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingDownload.h; sourceTree = "<group>"; };
+		1ED0AF271D40E64600A9CB3F /* AFNetworkingDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingDownload.m; sourceTree = "<group>"; };
+		1ED0AF281D40E64600A9CB3F /* AFNetworkingDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingDownload.xib; sourceTree = "<group>"; };
 		1ED0AF2B1D40E6B000A9CB3F /* QYAsynDownloadDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYAsynDownloadDemo.pch; sourceTree = "<group>"; };
+		1EEF67C71D463CCD00A64CE2 /* AFNetworkingUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingUpload.h; sourceTree = "<group>"; };
+		1EEF67C81D463CCD00A64CE2 /* AFNetworkingUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingUpload.m; sourceTree = "<group>"; };
+		1EEF67C91D463CCD00A64CE2 /* AFNetworkingUpload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNetworkingUpload.xib; sourceTree = "<group>"; };
 		520D8B0B46E79D5191143534 /* libPods-QYAsynDownloadDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QYAsynDownloadDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D619A8D13FE75A7C1A71BE /* Pods-QYAsynDownloadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYAsynDownloadDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QYAsynDownloadDemo/Pods-QYAsynDownloadDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,9 +104,9 @@
 		1E0463AD1D3F1D7E0084867B /* AFNetworkingDownload */ = {
 			isa = PBXGroup;
 			children = (
-				1ED0AF261D40E64600A9CB3F /* AFNetworkingViewController.h */,
-				1ED0AF271D40E64600A9CB3F /* AFNetworkingViewController.m */,
-				1ED0AF281D40E64600A9CB3F /* AFNetworkingViewController.xib */,
+				1ED0AF261D40E64600A9CB3F /* AFNetworkingDownload.h */,
+				1ED0AF271D40E64600A9CB3F /* AFNetworkingDownload.m */,
+				1ED0AF281D40E64600A9CB3F /* AFNetworkingDownload.xib */,
 			);
 			path = AFNetworkingDownload;
 			sourceTree = "<group>";
@@ -95,12 +114,12 @@
 		1E0463AE1D3F1DA20084867B /* NSURLConnectionDownload */ = {
 			isa = PBXGroup;
 			children = (
-				1ED0AF171D40E5C000A9CB3F /* NSURLConnectionViewController.h */,
-				1ED0AF181D40E5C000A9CB3F /* NSURLConnectionViewController.m */,
-				1ED0AF191D40E5C000A9CB3F /* NSURLConnectionViewController.xib */,
-				1ED0AF0F1D40E59700A9CB3F /* NSURLConnectionDelegateViewController.h */,
-				1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m */,
-				1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib */,
+				1ED0AF171D40E5C000A9CB3F /* NSURLConnectionDownload.h */,
+				1ED0AF181D40E5C000A9CB3F /* NSURLConnectionDownload.m */,
+				1ED0AF191D40E5C000A9CB3F /* NSURLConnectionDownload.xib */,
+				1ED0AF0F1D40E59700A9CB3F /* NSURLConnectionDelegateDownload.h */,
+				1ED0AF101D40E59700A9CB3F /* NSURLConnectionDelegateDownload.m */,
+				1ED0AF111D40E59700A9CB3F /* NSURLConnectionDelegateDownload.xib */,
 			);
 			path = NSURLConnectionDownload;
 			sourceTree = "<group>";
@@ -108,13 +127,34 @@
 		1E0463B01D3F83FF0084867B /* NSURLSessionDownload */ = {
 			isa = PBXGroup;
 			children = (
-				1ED0AF1C1D40E61E00A9CB3F /* NSURLSessionViewController.h */,
-				1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionViewController.m */,
-				1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionViewController.xib */,
-				1ED0AF211D40E63100A9CB3F /* NSURLSessionDelegateViewController.h */,
-				1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateViewController.m */,
-				1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib */,
+				1ED0AF1C1D40E61E00A9CB3F /* NSURLSessionDownload.h */,
+				1ED0AF1D1D40E61E00A9CB3F /* NSURLSessionDownload.m */,
+				1ED0AF1E1D40E61E00A9CB3F /* NSURLSessionDownload.xib */,
+				1ED0AF211D40E63100A9CB3F /* NSURLSessionDelegateDownload.h */,
+				1ED0AF221D40E63100A9CB3F /* NSURLSessionDelegateDownload.m */,
+				1ED0AF231D40E63100A9CB3F /* NSURLSessionDelegateDownload.xib */,
 			);
+			path = NSURLSessionDownload;
+			sourceTree = "<group>";
+		};
+		1E1B41CB1D6AE68A00894C1D /* AFNetworkingUpload */ = {
+			isa = PBXGroup;
+			children = (
+				1EEF67C71D463CCD00A64CE2 /* AFNetworkingUpload.h */,
+				1EEF67C81D463CCD00A64CE2 /* AFNetworkingUpload.m */,
+				1EEF67C91D463CCD00A64CE2 /* AFNetworkingUpload.xib */,
+			);
+			path = AFNetworkingUpload;
+			sourceTree = "<group>";
+		};
+		1E5002D01D6EE18A00FFB7E0 /* NSURLSessionUpload */ = {
+			isa = PBXGroup;
+			children = (
+				1E9725DC1D75845C0082BD9B /* NSURLSessionUpload.h */,
+				1E9725DD1D75845C0082BD9B /* NSURLSessionUpload.m */,
+				1E9725DE1D75845C0082BD9B /* NSURLSessionUpload.xib */,
+			);
+			name = NSURLSessionUpload;
 			path = NSURLSessionDownload;
 			sourceTree = "<group>";
 		};
@@ -139,11 +179,14 @@
 		1E7A24BE1D3DDDB000EAE392 /* QYAsynDownloadDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1ED0AF0C1D40E4EF00A9CB3F /* UIButton+BeautifulButton.h */,
-				1ED0AF0D1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m */,
+				1E9E1F811D420DFE0038E837 /* QYCreateUploadRequest.h */,
+				1E9E1F821D420DFE0038E837 /* QYCreateUploadRequest.m */,
 				1E0463AE1D3F1DA20084867B /* NSURLConnectionDownload */,
+				1E9E1F7B1D4206720038E837 /* NSURLConnectionUpload */,
 				1E0463B01D3F83FF0084867B /* NSURLSessionDownload */,
+				1E5002D01D6EE18A00FFB7E0 /* NSURLSessionUpload */,
 				1E0463AD1D3F1D7E0084867B /* AFNetworkingDownload */,
+				1E1B41CB1D6AE68A00894C1D /* AFNetworkingUpload */,
 				1E7A24C21D3DDDB000EAE392 /* AppDelegate.h */,
 				1E7A24C31D3DDDB000EAE392 /* AppDelegate.m */,
 				1E7A24C51D3DDDB000EAE392 /* ViewController.h */,
@@ -160,10 +203,22 @@
 		1E7A24BF1D3DDDB000EAE392 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E9E1F861D45C2170038E837 /* qrcode1.png */,
+				1E9E1F841D450D150038E837 /* qrcode.png */,
 				1E7A24C01D3DDDB000EAE392 /* main.m */,
 				1ED0AF2B1D40E6B000A9CB3F /* QYAsynDownloadDemo.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E9E1F7B1D4206720038E837 /* NSURLConnectionUpload */ = {
+			isa = PBXGroup;
+			children = (
+				1E9E1F7C1D420DDD0038E837 /* NSURLConnectionUpload.h */,
+				1E9E1F7D1D420DDD0038E837 /* NSURLConnectionUpload.m */,
+				1E9E1F7E1D420DDD0038E837 /* NSURLConnectionUpload.xib */,
+			);
+			path = NSURLConnectionUpload;
 			sourceTree = "<group>";
 		};
 		5C014218597C2ED33835A152 /* Frameworks */ = {
@@ -234,14 +289,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED0AF251D40E63100A9CB3F /* NSURLSessionDelegateViewController.xib in Resources */,
-				1ED0AF131D40E59700A9CB3F /* NSURLConnectionDelegateViewController.xib in Resources */,
+				1ED0AF251D40E63100A9CB3F /* NSURLSessionDelegateDownload.xib in Resources */,
+				1E9E1F871D45C2170038E837 /* qrcode1.png in Resources */,
+				1ED0AF131D40E59700A9CB3F /* NSURLConnectionDelegateDownload.xib in Resources */,
 				1E7A24CF1D3DDDB000EAE392 /* LaunchScreen.storyboard in Resources */,
-				1ED0AF201D40E61E00A9CB3F /* NSURLSessionViewController.xib in Resources */,
+				1ED0AF201D40E61E00A9CB3F /* NSURLSessionDownload.xib in Resources */,
 				1E7A24CC1D3DDDB000EAE392 /* Assets.xcassets in Resources */,
-				1ED0AF2A1D40E64600A9CB3F /* AFNetworkingViewController.xib in Resources */,
+				1ED0AF2A1D40E64600A9CB3F /* AFNetworkingDownload.xib in Resources */,
+				1EEF67CB1D463CCD00A64CE2 /* AFNetworkingUpload.xib in Resources */,
 				1E7A24CA1D3DDDB000EAE392 /* Main.storyboard in Resources */,
-				1ED0AF1B1D40E5C000A9CB3F /* NSURLConnectionViewController.xib in Resources */,
+				1E9725E01D75845C0082BD9B /* NSURLSessionUpload.xib in Resources */,
+				1E9E1F851D450D150038E837 /* qrcode.png in Resources */,
+				1ED0AF1B1D40E5C000A9CB3F /* NSURLConnectionDownload.xib in Resources */,
+				1E9E1F801D420DDD0038E837 /* NSURLConnectionUpload.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +360,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED0AF121D40E59700A9CB3F /* NSURLConnectionDelegateViewController.m in Sources */,
-				1ED0AF0E1D40E4EF00A9CB3F /* UIButton+BeautifulButton.m in Sources */,
-				1ED0AF241D40E63100A9CB3F /* NSURLSessionDelegateViewController.m in Sources */,
-				1ED0AF1A1D40E5C000A9CB3F /* NSURLConnectionViewController.m in Sources */,
-				1ED0AF291D40E64600A9CB3F /* AFNetworkingViewController.m in Sources */,
+				1ED0AF121D40E59700A9CB3F /* NSURLConnectionDelegateDownload.m in Sources */,
+				1ED0AF241D40E63100A9CB3F /* NSURLSessionDelegateDownload.m in Sources */,
+				1EEF67CA1D463CCD00A64CE2 /* AFNetworkingUpload.m in Sources */,
+				1ED0AF1A1D40E5C000A9CB3F /* NSURLConnectionDownload.m in Sources */,
+				1E9E1F7F1D420DDD0038E837 /* NSURLConnectionUpload.m in Sources */,
+				1ED0AF291D40E64600A9CB3F /* AFNetworkingDownload.m in Sources */,
 				1E7A24C71D3DDDB000EAE392 /* ViewController.m in Sources */,
 				1E7A24C41D3DDDB000EAE392 /* AppDelegate.m in Sources */,
-				1ED0AF1F1D40E61E00A9CB3F /* NSURLSessionViewController.m in Sources */,
+				1E9725DF1D75845C0082BD9B /* NSURLSessionUpload.m in Sources */,
+				1E9E1F831D420DFE0038E837 /* QYCreateUploadRequest.m in Sources */,
+				1ED0AF1F1D40E61E00A9CB3F /* NSURLSessionDownload.m in Sources */,
 				1E7A24C11D3DDDB000EAE392 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

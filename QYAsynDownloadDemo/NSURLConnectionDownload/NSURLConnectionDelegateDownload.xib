@@ -5,11 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSURLSessionViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSURLConnectionDelegateDownload">
             <connections>
                 <outlet property="btnDownloadFile" destination="mwt-p9-tRE" id="ZVc-6S-ES3"/>
-                <outlet property="lblFileName" destination="dlB-Qn-eOO" id="NdS-9n-7KX"/>
+                <outlet property="lblFileName" destination="dlB-Qn-eOO" id="vJk-jh-Y2c"/>
                 <outlet property="lblMessage" destination="qlQ-nM-BXU" id="tRe-SR-AQE"/>
+                <outlet property="progVDownloadFile" destination="Me3-m2-iC4" id="PtK-m7-j5N"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,11 +35,18 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="downloadFile:" destination="-1" eventType="touchUpInside" id="MK4-Yk-IOk"/>
+                        <action selector="downloadFile:" destination="-1" eventType="touchUpInside" id="iGc-6N-bsZ"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlQ-nM-BXU">
-                    <rect key="frame" x="145" y="140" width="38" height="18"/>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Me3-m2-iC4">
+                    <rect key="frame" x="145" y="160" width="310" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="I50-Zx-DwT"/>
+                        <constraint firstAttribute="width" constant="310" id="wdS-eD-Tkc"/>
+                    </constraints>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlQ-nM-BXU">
+                    <rect key="frame" x="145" y="180" width="38" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -49,11 +57,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="centerX" secondItem="Me3-m2-iC4" secondAttribute="centerX" id="Ya8-bM-TaA"/>
+                <constraint firstItem="Me3-m2-iC4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="160" id="bOY-B5-is2"/>
                 <constraint firstAttribute="centerX" secondItem="dlB-Qn-eOO" secondAttribute="centerX" id="gNK-NO-rth"/>
                 <constraint firstItem="dlB-Qn-eOO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="hwU-O2-Fed"/>
+                <constraint firstItem="qlQ-nM-BXU" firstAttribute="leading" secondItem="Me3-m2-iC4" secondAttribute="leading" id="lus-oi-9SA"/>
                 <constraint firstAttribute="centerX" secondItem="mwt-p9-tRE" secondAttribute="centerX" id="teN-3t-8Gc"/>
-                <constraint firstItem="qlQ-nM-BXU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="140" id="w3g-ej-P18"/>
-                <constraint firstItem="dlB-Qn-eOO" firstAttribute="leading" secondItem="qlQ-nM-BXU" secondAttribute="leading" constant="0.5" id="wMU-pU-z9f"/>
+                <constraint firstItem="qlQ-nM-BXU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="180" id="w3g-ej-P18"/>
                 <constraint firstAttribute="bottom" secondItem="mwt-p9-tRE" secondAttribute="bottom" constant="40" id="yBq-He-Jv8"/>
             </constraints>
         </view>
