@@ -59,11 +59,9 @@
     //    if (!connectionError) {
     //        [self saveDataToDisk:data];
     //        NSLog(@"保存成功");
-    //
     //        _lblMessage.text = @"下载完成";
     //    } else {
     //        NSLog(@"下载失败，错误信息：%@", connectionError.localizedDescription);
-    //
     //        _lblMessage.text = @"下载失败";
     //    }
     
@@ -74,12 +72,9 @@
                                if (!connectionError) {
                                    [self saveDataToDisk:data];
                                    NSLog(@"保存成功");
-                                   
                                    _lblMessage.text = @"下载完成";
-                                   
                                } else {
                                    NSLog(@"下载失败，错误信息：%@", connectionError.localizedDescription);
-                                   
                                    _lblMessage.text = @"下载失败";
                                }
                            }];

@@ -108,7 +108,7 @@
 
 + (void)startMultiPartUploadTaskWithURL:(NSString *)url
                            imagesArray:(NSArray *)images
-                     parameterOfimages:(NSString *)parameter
+                     parameterOfImages:(NSString *)parameter
                         parametersDict:(NSDictionary *)parameters
                       compressionRatio:(float)ratio
                           succeedBlock:(void (^)(id, id))succeedBlock
@@ -128,7 +128,6 @@
     AFHTTPRequestOperationManager * operationManager = [AFHTTPRequestOperationManager manager];
     operationManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     AFHTTPRequestOperation *operation = [operationManager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        
         int i = 0;
         //根据当前系统时间生成图片名称
         NSDate *date = [NSDate date];

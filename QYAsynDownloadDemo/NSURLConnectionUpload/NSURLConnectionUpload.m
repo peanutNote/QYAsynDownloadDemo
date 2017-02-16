@@ -25,7 +25,7 @@
 
 - (IBAction)uploadAction:(UIButton *)sender {
     _resultLabel.text = @"上传中...";
-    [NSURLConnection sendAsynchronousRequest:[QYCreateUploadRequest createUploadDataWithURL:kUploadURLStr images:@[[UIImage imageNamed:@"qrcode1.png"], [UIImage imageNamed:@"qrcode.png"]] parameterOfimages:@"images" parameters:@{@"appname":@"cmmapp", @"name" : @"qianye"} compressionRatio:1.0]
+    [NSURLConnection sendAsynchronousRequest:[QYCreateUploadRequest createUploadDataWithURL:kUploadURLStr images:@[[UIImage imageNamed:@"qrcode.png"]] parameterOfimages:@"image" parameters:@{@"appname":@"cmmapp", @"name" : @"qianye"} compressionRatio:1.0]
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
                                if (!connectionError) {

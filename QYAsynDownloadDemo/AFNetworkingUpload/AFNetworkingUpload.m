@@ -34,7 +34,7 @@
 
 
 - (IBAction)uploadFileByConnection:(UIButton *)sender {
-    [QYCreateUploadRequest startMultiPartUploadTaskWithURL:kUploadURLStr imagesArray:@[[UIImage imageNamed:@"qrcode1.png"], [UIImage imageNamed:@"qrcode.png"]] parameterOfimages:@"image" parametersDict:@{@"appname":@"cmmapp", @"name" : @"qianye"} compressionRatio:1.0 succeedBlock:^(id operation, id responseObject) {
+    [QYCreateUploadRequest startMultiPartUploadTaskWithURL:kUploadURLStr imagesArray:@[[UIImage imageNamed:@"qrcode1.png"], [UIImage imageNamed:@"qrcode.png"]] parameterOfImages:@"image" parametersDict:@{@"appname":@"cmmapp", @"name" : @"qianye"} compressionRatio:1.0 succeedBlock:^(id operation, id responseObject) {
         _resultLabel.text = @"上传成功";
     } failedBlock:^(id operation, NSError *error) {
         _resultLabel.text = @"上传失败";

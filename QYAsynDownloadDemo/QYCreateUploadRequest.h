@@ -41,7 +41,7 @@
  */
 + (void)startMultiPartUploadTaskWithURL:(NSString *)url
                            imagesArray:(NSArray *)images
-                     parameterOfimages:(NSString *)parameter
+                     parameterOfImages:(NSString *)parameter
                         parametersDict:(NSDictionary *)parameters
                       compressionRatio:(float)ratio
                           succeedBlock:(void(^)(id operation, id responseObject))succeedBlock

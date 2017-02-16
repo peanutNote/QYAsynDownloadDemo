@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1DF71F1E54759300B88B5F /* demoImage1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1DF71E1E54759300B88B5F /* demoImage1.jpeg */; };
+		1E1DF7441E547DE700B88B5F /* demoImage2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1DF7431E547DE700B88B5F /* demoImage2.jpeg */; };
 		1E7A24C11D3DDDB000EAE392 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A24C01D3DDDB000EAE392 /* main.m */; };
 		1E7A24C41D3DDDB000EAE392 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A24C31D3DDDB000EAE392 /* AppDelegate.m */; };
 		1E7A24C71D3DDDB000EAE392 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A24C61D3DDDB000EAE392 /* ViewController.m */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		17C5B8CEEBC2A81AA2BB8CDF /* Pods-QYAsynDownloadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYAsynDownloadDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QYAsynDownloadDemo/Pods-QYAsynDownloadDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1E1DF71E1E54759300B88B5F /* demoImage1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demoImage1.jpeg; sourceTree = "<group>"; };
+		1E1DF7431E547DE700B88B5F /* demoImage2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demoImage2.jpeg; sourceTree = "<group>"; };
 		1E7A24BC1D3DDDB000EAE392 /* QYAsynDownloadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYAsynDownloadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7A24C01D3DDDB000EAE392 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E7A24C21D3DDDB000EAE392 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 		1E7A24BF1D3DDDB000EAE392 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E1DF71E1E54759300B88B5F /* demoImage1.jpeg */,
+				1E1DF7431E547DE700B88B5F /* demoImage2.jpeg */,
 				1E9E1F861D45C2170038E837 /* qrcode1.png */,
 				1E9E1F841D450D150038E837 /* qrcode.png */,
 				1E7A24C01D3DDDB000EAE392 /* main.m */,
@@ -258,11 +264,13 @@
 		1E7A24B41D3DDDB000EAE392 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = qianye;
 				TargetAttributes = {
 					1E7A24BB1D3DDDB000EAE392 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U27UCT3Q2J;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -299,7 +307,9 @@
 				1EEF67CB1D463CCD00A64CE2 /* AFNetworkingUpload.xib in Resources */,
 				1E7A24CA1D3DDDB000EAE392 /* Main.storyboard in Resources */,
 				1E9725E01D75845C0082BD9B /* NSURLSessionUpload.xib in Resources */,
+				1E1DF71F1E54759300B88B5F /* demoImage1.jpeg in Resources */,
 				1E9E1F851D450D150038E837 /* qrcode.png in Resources */,
+				1E1DF7441E547DE700B88B5F /* demoImage2.jpeg in Resources */,
 				1ED0AF1B1D40E5C000A9CB3F /* NSURLConnectionDownload.xib in Resources */,
 				1E9E1F801D420DDD0038E837 /* NSURLConnectionUpload.xib in Resources */,
 			);
@@ -411,8 +421,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -456,8 +468,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -486,12 +500,16 @@
 			baseConfigurationReference = D9D619A8D13FE75A7C1A71BE /* Pods-QYAsynDownloadDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = U27UCT3Q2J;
 				GCC_PREFIX_HEADER = QYAsynDownloadDemo/QYAsynDownloadDemo.pch;
 				INFOPLIST_FILE = QYAsynDownloadDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianye.QYAsynDownloadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0f07ca32-b8dd-4b5f-893e-0635e3495efe";
+				PROVISIONING_PROFILE_SPECIFIER = qianyeDemo;
 			};
 			name = Debug;
 		};
@@ -500,9 +518,11 @@
 			baseConfigurationReference = 17C5B8CEEBC2A81AA2BB8CDF /* Pods-QYAsynDownloadDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = QYAsynDownloadDemo/QYAsynDownloadDemo.pch;
 				INFOPLIST_FILE = QYAsynDownloadDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianye.QYAsynDownloadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AFNetworkingUpload">
@@ -13,63 +17,69 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传示例" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT2-RK-N3r">
-                    <rect key="frame" x="145" y="114" width="310" height="18"/>
+                    <rect key="frame" x="32" y="95" width="310" height="18"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="18" id="ULC-Vh-gR0"/>
-                        <constraint firstAttribute="width" constant="310" id="xkz-az-nLo"/>
+                        <constraint firstAttribute="width" constant="310" id="RC9-zW-NWn"/>
+                        <constraint firstAttribute="height" constant="18" id="UiW-Ia-yce"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-0s-bFz">
-                    <rect key="frame" x="175" y="488" width="250" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="PvP-NI-NXU"/>
-                        <constraint firstAttribute="width" constant="250" id="imr-E5-irg"/>
-                    </constraints>
-                    <state key="normal" title="基于 NSURLSession 的上传">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="uploadFileBySession:" destination="-1" eventType="touchUpInside" id="U9w-CG-gzD"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmS-ix-PN9">
-                    <rect key="frame" x="175" y="428" width="250" height="40"/>
+                    <rect key="frame" x="62" y="426" width="250" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="BSi-zO-IG3"/>
-                        <constraint firstAttribute="width" constant="250" id="wDw-jc-oF9"/>
+                        <constraint firstAttribute="height" constant="40" id="tpT-1t-u2K"/>
                     </constraints>
                     <state key="normal" title="基于 NSURLConnection 的上传">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="uploadFileByConnection:" destination="-1" eventType="touchUpInside" id="Lux-gX-KK8"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-0s-bFz">
+                    <rect key="frame" x="62" y="491" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iml-8J-Wxe"/>
+                        <constraint firstAttribute="width" constant="250" id="jvZ-ID-NBL"/>
+                    </constraints>
+                    <state key="normal" title="基于 NSURLSession 的上传">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="uploadFileBySession:" destination="-1" eventType="touchUpInside" id="U9w-CG-gzD"/>
+                    </connections>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="准备上传" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqQ-vR-35D">
-                    <rect key="frame" x="270" y="147" width="60" height="18"/>
+                    <rect key="frame" x="156" y="142" width="62" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="aTY-WZ-sUo"/>
+                        <constraint firstAttribute="height" constant="18" id="or3-L1-seO"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="gcC-0s-bFz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ArU-zk-fXz"/>
-                <constraint firstItem="oqQ-vR-35D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RhJ-pt-mj7"/>
-                <constraint firstItem="VT2-RK-N3r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vaw-9c-xE1"/>
-                <constraint firstItem="gcC-0s-bFz" firstAttribute="top" secondItem="RmS-ix-PN9" secondAttribute="bottom" constant="20" id="ch3-YQ-gmm"/>
-                <constraint firstAttribute="bottom" secondItem="gcC-0s-bFz" secondAttribute="bottom" constant="72" id="ofl-9c-Qhn"/>
-                <constraint firstItem="oqQ-vR-35D" firstAttribute="top" secondItem="VT2-RK-N3r" secondAttribute="bottom" constant="15" id="vQo-UN-QuB"/>
-                <constraint firstItem="RmS-ix-PN9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wrS-sX-w12"/>
-                <constraint firstItem="VT2-RK-N3r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="114" id="x6Z-FW-SyH"/>
+                <constraint firstItem="oqQ-vR-35D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Rc-wV-JiB"/>
+                <constraint firstItem="gcC-0s-bFz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EEn-8g-BBH"/>
+                <constraint firstItem="oqQ-vR-35D" firstAttribute="top" secondItem="VT2-RK-N3r" secondAttribute="bottom" constant="29" id="JtX-ux-B05"/>
+                <constraint firstItem="VT2-RK-N3r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="Lf1-Nu-igr"/>
+                <constraint firstItem="RmS-ix-PN9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="62" id="YiK-Hd-zWN"/>
+                <constraint firstItem="RmS-ix-PN9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bZA-Gi-d5l"/>
+                <constraint firstAttribute="bottom" secondItem="gcC-0s-bFz" secondAttribute="bottom" constant="136" id="c36-Cl-BAI"/>
+                <constraint firstItem="gcC-0s-bFz" firstAttribute="top" secondItem="RmS-ix-PN9" secondAttribute="bottom" constant="25" id="ibi-7V-tr6"/>
+                <constraint firstItem="VT2-RK-N3r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="inQ-eQ-Yhl"/>
+                <constraint firstAttribute="trailing" secondItem="RmS-ix-PN9" secondAttribute="trailing" constant="63" id="p2y-mU-B9c"/>
             </constraints>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
         </view>
     </objects>
 </document>

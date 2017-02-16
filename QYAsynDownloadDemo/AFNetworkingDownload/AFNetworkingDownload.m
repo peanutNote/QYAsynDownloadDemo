@@ -12,11 +12,7 @@
 #import "QYCreateUploadRequest.h"
 
 @interface AFNetworkingDownload ()
-- (void)showAlert:(NSString *)msg;
-- (void)checkNetwork;
-- (void)layoutUI;
-- (NSURL *)saveURL:(NSURLResponse *)response deleteExistFile:(BOOL)deleteExistFile;
-- (void)updateProgress:(int64_t)receiveDataLength totalDataLength:(int64_t)totalDataLength;
+
 @end
 
 @implementation AFNetworkingDownload
@@ -95,12 +91,6 @@
 - (void)layoutUI {
     self.navigationItem.title = kTitleOfAFNetworking;
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.000];
-    
-    //条件表达式中，「?:」可以表示在条件不成立的情况，才使用后者赋值，否则使用用于条件判断的前者赋值
-    //以下语句等同于：UIButton *btn = _btnDownloadFileByConnection ? _btnDownloadFileByConnection : [UIButton new];
-    //在 .NET 中，相当于使用「??」；在 JavaScript 中，相当于使用「||」来实现这种类似的判断
-    UIButton *btn = _btnDownloadFileByConnection ?: [UIButton new];
-    
     //进度效果
     _hud = [[MBProgressHUD alloc] initWithView:self.view];
     _hud.mode = MBProgressHUDModeDeterminate;
@@ -149,11 +139,11 @@
         
         if (receiveDataLength == totalDataLength) {
             _lblMessage.text =  receiveDataLength < 0 ? @"下载失败" : @"下载完成";
-            //kApplication.networkActivityIndicatorVisible = NO;
+            kApplication.networkActivityIndicatorVisible = NO;
             [_hud hideAnimated:YES];
         } else {
             _lblMessage.text = @"下载中...";
-            //kApplication.networkActivityIndicatorVisible = YES;
+            kApplication.networkActivityIndicatorVisible = YES;
             [_hud showAnimated:YES];
         }
     });
@@ -162,11 +152,11 @@
 - (IBAction)downloadFileByConnection:(id)sender {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"AFNetworking在3.0版本中删除了基于 NSURLConnection API的所有支持" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alertView show];
-    /*
-     * AFNetworking 2.x使用，3.0弃用
-     *
+    
+    // * AFNetworking 2.x使用，3.0弃用
+    // *
     //创建请求
-    NSMutableURLRequest *request = [self downloadRequest];
+    NSMutableURLRequest *request = [QYCreateUploadRequest downloadRequest];
     //创建请求操作
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     NSString *savePath = [[self saveURL:nil deleteExistFile:NO] path];
@@ -192,7 +182,6 @@
     
     //启动请求操作
     [operation start];
-     */
 }
 
 - (IBAction)downloadFileBySession:(id)sender {

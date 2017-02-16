@@ -97,9 +97,9 @@
 }
 
 #pragma mark - NSURLConnectionDataDelegate
+
 - (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response {
     NSLog(@"即将发送请求");
-    
     return request;
 }
 

@@ -50,7 +50,6 @@
         
         if (!error) {
             NSLog(@"下载后的临时保存路径：%@", location);
-            
             NSString *savePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
             savePath = [savePath stringByAppendingPathComponent:_lblFileName.text];
             NSURL *saveURL = [NSURL fileURLWithPath:savePath];
@@ -61,7 +60,6 @@
                 [fileManager removeItemAtPath:savePath error:&saveError];
                 if (saveError) {
                     NSLog(@"移除旧的目标文件失败，错误信息：%@", saveError.localizedDescription);
-                    
                     updateUI = ^ {
                         _lblMessage.text = @"下载失败";
                     };
